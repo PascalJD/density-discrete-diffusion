@@ -1,0 +1,11 @@
+# Discrete analog bits dataset (d = 2)
+_target_: density_discrete_diffusion.data.synthetic_binary.SyntheticBinary
+
+name: synthetic_binary_2d
+
+dim: 2
+# Lexicographic order: (+1,+1), (+1,-1), (-1,+1), (-1,-1)
+pmf: [0.20, 0.10, 0.15, 0.55]
+
+num_samples: 100000
+seed: 42

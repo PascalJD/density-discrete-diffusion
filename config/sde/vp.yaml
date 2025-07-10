@@ -1,0 +1,3 @@
+_target_: density_discrete_diffusion.sde.vp.VP
+name: vp
+T: 1.0

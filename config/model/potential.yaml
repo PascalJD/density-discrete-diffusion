@@ -1,0 +1,5 @@
+_target_: density_discrete_diffusion.models.potential.Potential
+T: ${sde.T}     
+tau_max: 10.0
+tau_min: 0.005
+eps: 1e-4

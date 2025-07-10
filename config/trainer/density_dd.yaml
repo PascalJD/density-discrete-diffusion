@@ -1,0 +1,8 @@
+_target_: density_discrete_diffusion.algorithms.density_dd.trainer.Trainer
+lr: 3e-4
+cfg_ckpt: ${checkpoint}
+cfg_wandb: ${wandb_cfg}
+
+batch_size: 512
+training_steps: 50000
+sampling_steps: 100

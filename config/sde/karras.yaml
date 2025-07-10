@@ -1,0 +1,2 @@
+_target_: density_discrete_diffusion.sde.karras.KarrasSDE
+T: 1.0

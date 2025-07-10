@@ -1,0 +1,25 @@
+defaults:
+  - trainer: density_dd
+  - data: binary_2d  
+  - sde: vp
+  - checkpoint: checkpoint
+  - model: potential
+  - _self_
+
+seed: 0              
+
+hydra:
+  run:
+    dir: outputs/${data.name}_${sde.name}_lr${trainer.lr}/${now:%H-%M-%S}
+  sweep:
+    dir: outputs/${data.name}_${sde.name}_lr${trainer.lr}/${now:%H-%M-%S}
+    subdir: ${hydra.job.num}
+
+wandb_cfg:
+  project: ${data.name}_${sde.name}_lr${trainer.lr}
+  name: run-${now:%Y%m%d-%H%M%S}
+  entity: pascal_jutras_dube
+
+resume: false                  
+run_id: null               
+checkpoint_dir: ${hydra:run.dir}/checkpoints

@@ -1,0 +1,19 @@
+name: density_discrete_diffusion
+channels:
+  - conda-forge    
+  - nvidia       
+  - defaults
+dependencies:
+  - python=3.10
+  - pip         
+  - nvidia::cuda-toolkit=12.2            
+  - hydra-core        
+  - omegaconf              
+  - wandb                   
+  - matplotlib             
+  - pytest
+  - pip:
+      - "jax[cuda12]"
+      - flax>=0.8
+      - optax>=0.1.8
+      - orbax-checkpoint

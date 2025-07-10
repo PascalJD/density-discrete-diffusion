@@ -1,0 +1,6 @@
+# config/schedule/edm18.yaml
+_target_: density_discrete_diffusion.algorithms.schedule.make_karras_grid
+N: 18
+p: 7.0
+e: 2e-3
+T: ${sde.T}  
